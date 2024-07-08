@@ -1,0 +1,102 @@
+/* FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.text-primary-lime {
+    color: hsl(61, 70%, 52%);
+}
+
+.bg-primary-lime {
+    background-color: hsl(61, 70%, 52%);
+}
+
+.bg-button-color {
+    background-color: hsl(61, 70%, 52%);
+}
+
+.text-primary-red {
+    color: hsl(4, 69%, 50%);
+}
+
+.bg-primary-red {
+    background-color: hsl(4, 69%, 50%);
+}
+
+.bg-neutral-white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.text-neutral-slate100 {
+    color: hsl(202, 86%, 94%);
+}
+
+.bg-neutral-slate100,
+body {
+    background-color: hsl(202, 86%, 94%);
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.text-neutral-slate300 {
+    color: hsl(203, 41%, 72%);
+}
+
+.bg-neutral-slate300 {
+    background-color: hsl(203, 41%, 72%);
+}
+
+.text-neutral-slate500 {
+    color: hsl(200, 26%, 54%);
+}
+
+.bg-neutral-slate500 {
+    background-color: hsl(200, 26%, 54%);
+}
+
+.text-neutral-slate700 {
+    color: hsl(200, 24%, 40%);
+}
+
+.bg-neutral-slate700 {
+    background-color: hsl(200, 24%, 40%);
+}
+
+.text-neutral-slate900 {
+    color: hsl(202, 55%, 16%);
+}
+
+.bg-neutral-slate900 {
+    background-color: hsl(202, 55%, 16%);
+}
+
+.border-color {
+    border: 1.8px solid #122f3f;
+}
+
+
+/* Apply Custom Font */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+z-index {
+    z-index: -10;
+}
+
+
+input[type="radio"]:checked {
+    accent-color: hsl(61, 70%, 52%);
+}

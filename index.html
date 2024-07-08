@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Mortgage repayment calculator</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="container mx-auto md:my-8 lg:max-w-3xl">
+			<!-- SUBCONTAINER -->
+			<section class="sub-container bg-neutral-white md:rounded-lg">
+				<!-- Grid one -->
+				<article class="mortgage-calculator p-4">
+					<div class="md:flex md:justify-between md:items-center">
+						<h1
+							class="text-neutral-slate900 text-2xl font-black font-bold mb-2">
+							Mortgage Calculator
+						</h1>
+						<p class="clear-form mb-3 underline text-neutral-slate900">
+							Clear All
+						</p>
+					</div>
+					<!-- FORM SECTION -->
+					<form action="">
+						<div class="md:grid md:grid-cols-2 gap-4">
+							<!-- Mortgage amount -->
+							<div class="amount relative col-span-2">
+								<div class="overall relative">
+									<div
+										class="euro-icon-1 w-12 h-12 flex justify-center items-center absolute bottom-2 left-0 font-black text-neutral-slate900 rounded-l-lg bg-neutral-slate100 text-lg border-color border-x-0 border-y-1 border-l-2">
+										&euro;
+									</div>
+									<label for="amount" class="text-neutral-slate700"
+										>Mortgage Amount </label
+									><br />
+									<input
+										type="number"
+										name="amount"
+										title="amount"
+										class="border-color rounded-lg w-full h-12 mt-2 mb-2 pl-14 mortgage-amount" />
+								</div>
+								<div class="error error-1 hidden">
+									Please Enter The Valid input
+								</div>
+							</div>
+							<!-- mortgage term -->
+							<div class="term">
+								<div class="overall relative">
+									<div
+										class="euro-icon-2 w-16 h-12 flex justify-center items-center absolute bottom-2 right-0 font-black text-neutral-slate900 rounded-r-lg bg-neutral-slate100 text-lg border-x-0 border-y-1 border-color border-r-2">
+										years
+									</div>
+									<label for="term" class="text-neutral-slate700"
+										>Mortgage Term</label
+									><br />
+									<input
+										type="number"
+										name="term"
+										title="term"
+										class="border-color rounded-lg w-full h-12 mt-2 mb-2 p-4 mortgage-term" />
+								</div>
+
+								<div class="error error-2 hidden">
+									Please Enter The Valid input
+								</div>
+							</div>
+
+							<!-- interest Rate -->
+							<div class="interest">
+								<div class="overall relative">
+									<div
+										class="euro-icon-3 w-16 h-12 flex justify-center items-center absolute bottom-2 right-0 font-black text-neutral-slate900 rounded-r-lg bg-neutral-slate100 z-index border-y-1 border-l-0 border-color border-r-2">
+										%
+									</div>
+									<label for="interest" class="text-neutral-slate700"
+										>Interest Rate </label
+									><br />
+									<input
+										type="number"
+										name="interest"
+										title="interest"
+										class="border-color rounded-lg w-full h-12 mt-2 mb-2 p-4 mortgage-interest" />
+								</div>
+								<div class="error error-3 hidden">
+									Please Enter The Valid input
+								</div>
+							</div>
+						</div>
+
+						<!-- MORTGAGE TYPE -->
+						<div class="mortgage-type">
+							<label for="type" class="text-neutral-slate700"
+								>Mortgage Type</label
+							>
+
+							<div
+								class="repayment checked-1 mb-2 mt-3 border-color p-3 rounded-lg">
+								<input
+									type="radio"
+									name="types"
+									id="types"
+									class="mr-4 radio-btn" />
+								<label
+									for="types"
+									class="text-neutral-slate900 font-black text-lg">
+									Repayment
+								</label>
+							</div>
+
+							<div
+								class="interest-only checked-2 mb-2 mt-3 border-color p-3 rounded-lg">
+								<input
+									type="radio"
+									name="types"
+									id="types"
+									class="mr-4 radio-btn" />
+								<label
+									for="types"
+									class="text-neutral-slate900 font-black text-lg">
+									Interest Only
+								</label>
+							</div>
+						</div>
+
+						<button
+							type="submit"
+							class="md:w-64 container mt-6 mb-4 bg-button-color p-3 pl-4 pr-4 rounded-full text-neutral-slate900 font-black text-base flex justify-center">
+							<span
+								><img
+									src="./assets/images/icon-calculator.svg"
+									alt=""
+									srcset="" /></span
+							>Calculate Repayments
+						</button>
+					</form>
+				</article>
+
+				<!-- Grid 2 -->
+				<article
+					class="mortgage-result bg-neutral-slate900 p-4 md:rounded-b-lg">
+					<!-- Empty results start -->
+
+					<aside class="no-result text-center text-white">
+						<div class="image flex items-center justify-center mt-6 mb-6">
+							<img
+								src="./assets/images/illustration-empty.svg"
+								alt=""
+								class="" />
+						</div>
+						<h2 class="text-2xl font-black mb-6">Results shown here</h2>
+						<p class="mb-6">
+							Complete the form and click “calculate repayments” to see what
+							your monthly repayments would be.
+						</p>
+					</aside>
+
+					<!-- Completed results start -->
+
+					<aside class="result text-white p-3 hidden">
+						<h2 class="text-lg font-black mb-6">Your results</h2>
+						Your results are shown below based on the information you provided.
+						To adjust the results, edit the form and click “calculate
+						repayments” again.
+						<div
+							class="monthly-repayment p-5 border-t-4 mt-4 rounded-lg border-[#d7da2f] bg-[#041016]">
+							<div class="mb-5">
+								<p>Your monthly repayments</p>
+								<p class="monthly-amount mt-5 font-black text-4xl">1,797.74</p>
+							</div>
+							<hr />
+
+							<div class="mt-6">
+								<p class="text-sm mb-3">Total you'll repay over the term</p>
+								<p class="total-amount font-bold text-lg">539,322.94</p>
+							</div>
+						</div>
+					</aside>
+					<!-- Compcleted results end -->
+				</article>
+			</section>
+			<script src="./main.js" defer></script>
+		</main>
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
