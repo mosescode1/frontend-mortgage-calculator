@@ -92,14 +92,14 @@ submitBtn.addEventListener("click", (event) => {
         }
 
 
-        if (+item.value === 0) {
+        if (+item.value <= 0) {
             const error = document.querySelector(`.error-${index + 1}`);
             const euroIcon = document.querySelector(`.euro-icon-${index + 1}`);
             euroIcon.style.backgroundColor = "red";
             error.classList.remove("hidden");
         }
 
-        if (+mortgageAmount.value !== 0 && +mortgageInterest.value !== 0 && +mortgageYears.value !== 0) {
+        if (+mortgageAmount.value > 0 && +mortgageInterest.value > 0 && +mortgageYears.value > 0) {
             const error = document.querySelector(`.error-${index + 1}`);
             error.classList.add("hidden");
 
