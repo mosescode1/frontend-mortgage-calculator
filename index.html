@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Frontend Mentor | Mortgage repayment calculator</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
@@ -10,8 +11,6 @@
 			type="image/png"
 			sizes="32x32"
 			href="./assets/images/favicon-32x32.png" />
-
-		<title>Frontend Mentor | Mortgage repayment calculator</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
@@ -51,7 +50,8 @@
 										type="number"
 										name="amount"
 										title="amount"
-										class="border-color rounded-lg w-full h-12 mt-2 mb-2 pl-14 mortgage-amount" />
+										class="border-color rounded-lg w-full h-12 mt-2 mb-2 pl-14 mortgage-amount"
+										aria-label="amount" />
 								</div>
 								<div class="error error-1 hidden">
 									Please Enter The Valid input
@@ -71,7 +71,8 @@
 										type="number"
 										name="term"
 										title="term"
-										class="border-color rounded-lg w-full h-12 mt-2 mb-2 p-4 mortgage-term" />
+										class="border-color rounded-lg w-full h-12 mt-2 mb-2 p-4 mortgage-term"
+										aria-label="years" />
 								</div>
 
 								<div class="error error-2 hidden">
@@ -93,7 +94,8 @@
 										type="number"
 										name="interest"
 										title="interest"
-										class="border-color rounded-lg w-full h-12 mt-2 mb-2 p-4 mortgage-interest" />
+										class="border-color rounded-lg w-full h-12 mt-2 mb-2 p-4 mortgage-interest"
+										aria-label="interest" />
 								</div>
 								<div class="error error-3 hidden">
 									Please Enter The Valid input
@@ -112,8 +114,9 @@
 								<input
 									type="radio"
 									name="types"
-									id="types"
-									class="mr-4 radio-btn" />
+									id="repayment__type"
+									class="mr-4 radio-btn"
+									aria-label="repayment" />
 								<label
 									for="types"
 									class="text-neutral-slate900 font-black text-lg">
@@ -126,8 +129,9 @@
 								<input
 									type="radio"
 									name="types"
-									id="types"
-									class="mr-4 radio-btn" />
+									id="intrest__type"
+									class="mr-4 radio-btn"
+									aria-label="interest Only" />
 								<label
 									for="types"
 									class="text-neutral-slate900 font-black text-lg">
@@ -138,7 +142,8 @@
 
 						<button
 							type="submit"
-							class="md:w-64 container mt-6 mb-4 bg-button-color p-3 pl-4 pr-4 rounded-full text-neutral-slate900 font-black text-base flex justify-center">
+							class="md:w-64 container mt-6 mb-4 bg-button-color p-3 pl-4 pr-4 rounded-full text-neutral-slate900 font-black text-base flex justify-center"
+							aria-label="submit">
 							<span
 								><img
 									src="./assets/images/icon-calculator.svg"

@@ -4,5 +4,10 @@
  will not be shown, you would have to be root to see it all.)
 (Not all processes could be identified, non-owned process info
  will not be shown, you would have to be root to see it all.)
-Mon Jul 08 2024 20:14:37:294 GMT+0100 (WAT) --  *** Error: Could not connect to local.browserstack.com due to Network issues. Please check your internet connection or if you are behind proxy please use our proxy options. For more details https://www.browserstack.com/local-testing#modifiers
-Mon Jul 08 2024 20:14:37:295 GMT+0100 (WAT) -- You can learn more about BrowserStack Binary flags by running ./BrowserStackLocal --help
+Sat Jul 13 2024 07:00:48:175 GMT+0100 (WAT) -- Starting configuration console on http://localhost:45454
+Sat Jul 13 2024 07:00:50:985 GMT+0100 (WAT) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 149337
+Sat Jul 13 2024 07:00:52:790 GMT+0100 (WAT) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Sat Jul 13 2024 07:00:54:629 GMT+0100 (WAT) -- Press Ctrl-C to exit
+
+
